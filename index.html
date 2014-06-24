@@ -69,7 +69,7 @@
 
 
 	
-	
+	<div class="body">
     	<div class="col left" id="top">
     	
        	 	<div class="content" >
@@ -85,6 +85,7 @@
        	 	
         	<div class="content">
         	
+        		<div id="platform">
         		<h2>Platforms</h2>
         		
         		<hr>
@@ -92,11 +93,11 @@
         		<h3>Education</h3>
         		
         		<p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Duis in nulla bibendum, blandit risus ut, venenatis tellus. Proin scelerisque enim purus, quis porta mi mollis eget. Phasellus consectetur nunc odio, sed sollicitudin augue lobortis id. Sed ullamcorper nec turpis in placerat. Nullam et dolor porttitor, porttitor libero sed, cursus felis. Fusce dignissim sed mi rutrum cursus. Etiam adipiscing, nibh vel consequat ultricies, nulla nulla sagittis dui, et iaculis magna odio vel mi. Etiam ac neque viverra nisi consequat aliquet vel a est. Nullam egestas erat eu pellentesque dignissim. Mauris sed lectus sit amet justo auctor consequat. Donec ut risus sit amet lorem vehicula ullamcorper.</p>
-        		
+        		</div>
         	
         	</div>
         	
-        	<div class="content" id="bio">
+        	 <div class="content" id="bio">
         	
         		<h2>Biographies</h2>
         		<hr>
@@ -175,7 +176,7 @@
         	<div class="content r"><div id="hands-01"></div></div>
         	
     	</div>
-    	
+    </div>
     	
 <!-- layered menu 
 	
@@ -206,12 +207,14 @@
     		
 		</script> 
 		
+		
+		
 <!-- Gradient thing --> 
 		
 		
 		<script>
 		
-		
+
 var colors = new Array(
   [255,255,255],
   [181,211,51],
@@ -250,7 +253,7 @@ var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
 var color2 = "#"+((r2 << 16) | (g2 << 8) | b2).toString(16);
 
  $('#gradient').css({
-   background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
+   background: "-webkit-gradient(linear, left top, left bottom, from("+color1+"), to("+color2+"))"}).css({
     background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
   
   step += gradientSpeed;
@@ -268,8 +271,7 @@ var color2 = "#"+((r2 << 16) | (g2 << 8) | b2).toString(16);
   }
 }
 
-setInterval(updateGradient,10);
-
+setInterval(updateGradient,70);
 </script>
 		  	
 
