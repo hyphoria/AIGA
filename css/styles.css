@@ -217,7 +217,9 @@ nav li	{
 .content {
     position:relative;
     height:100%;
-    margin: 0px;
+    margin: 0 auto;
+    max-width: 700px;
+    
 }
 
 
@@ -237,7 +239,6 @@ nav li	{
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	top: -40px;
 	margin: 50% auto;
 	
 }
@@ -281,12 +282,14 @@ nav li	{
 #hands-01 {
 
 	background-image: url('../img/hands-01.svg');
-	background-position: top;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 80%;
 	width: 100%;
 	height: 100%;
-	max-width: 600px;
+	
+	
+	
 	
 	
 }
@@ -299,7 +302,7 @@ nav li	{
 	background-size: 80%;
 	width: 100%;
 	height: 100%;
-	max-width: 600px;
+	
 	
 }
 
@@ -311,7 +314,7 @@ nav li	{
 	background-size: 80%;
 	width: 100%;
 	height: 100%;
-	max-width: 600px;
+	
 	
 }
 
@@ -323,7 +326,7 @@ nav li	{
 	background-size: 80%;
 	width: 100%;
 	height: 100%;
-	max-width: 600px;
+	
 }
 
 
