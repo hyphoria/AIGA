@@ -87,7 +87,7 @@ strong {
 
 	
 
-a {
+a:link, a:visited, a:active {
 
 	text-decoration: underline;
 	font-family: 'lora', serif;
@@ -103,15 +103,12 @@ a {
 
 a:hover {
 
-	color: white;
+	color: #fff;
 
 }
 
 
 .nav {
-
-    background: white;
-    box-shadow:5px 0 0 #fff, -5px 0 0 #fff;
     padding: 5px 0;
     transition: all 2s ease;
     
@@ -144,12 +141,15 @@ nav li	{
 	
 }
 
-.nav li:hover	{
-
+.nav li a:hover	{
 	font-family: helvetica, sans-serif;
 	font-weight: bold;
 	line-height: 1.6em;
-	
+	background-color:#fff;
+}
+
+.nav li > ul{
+	padding-right:3px;
 }
 
 
