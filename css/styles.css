@@ -243,10 +243,10 @@ nav li	{
 	right: 0px;
 	bottom: 0px;
 	width: 50%;
-	height: 60px;
+	font-size: 0.8em;
+	font-weight: normal;
 	z-index: 99;
 	text-align: center;
-	letter-spacing: 0.05em;
 	background-color: white;
 	color: black;
 	
@@ -284,14 +284,51 @@ nav li	{
 
 /* left column */
 
-#titles {
+#intro {
+
+	position: relative;
+	
+	margin-top: 50%;
+	text-align: right;
+	
+}
+
+#intro p {
+
+	margin: 0;
+	font-size: 4em;
+	font-style: italic;
+	line-height: 1.7em;
+
+}
+
+#date {
 
 	position: relative;
 	width: 100%;
 	height: 100%;
+	margin-top: 10%;
+	
+}
+
+#date p{
+
+	text-align:left;
+	font-size: 1.5em;
+	margin: 0 10%;
+	
+}
+
+#committee {
+
+	margin-top: 20%;
+	
+}
+
+#committee p{
+
 	text-align: center;
-	margin: 50% auto;
-	top: -55px;
+	margin: 2% 10%;
 	
 }
 
@@ -334,15 +371,11 @@ nav li	{
 #hands-01 {
 
 	background-image: url('../img/hands-01.svg');
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: 80%;
 	width: 100%;
 	height: 100%;
-	
-	
-	
-	
 	
 }
 
