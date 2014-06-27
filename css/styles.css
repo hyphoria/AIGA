@@ -95,9 +95,6 @@ h1 {
 
 	font-family: helvetica, sans-serif;
 	font-size: 2em;
-	
-	
-	
 }
 
 h2 {
@@ -287,19 +284,17 @@ nav li	{
 #intro {
 
 	position: relative;
-	
-	margin-top: 50%;
-	text-align: right;
+	margin-top: 55%;
 	
 }
 
 #intro p {
-
 	margin: 0;
-	font-size: 4em;
-	font-style: italic;
-	line-height: 1.7em;
-
+	font-size: 2em;
+	font-family:'Lora';
+	font-weight:700;
+	font-style:italic;
+	margin:0 10%;
 }
 
 #date {
@@ -307,7 +302,7 @@ nav li	{
 	position: relative;
 	width: 100%;
 	height: 100%;
-	margin-top: 10%;
+	margin-top: 30px;
 	
 }
 
@@ -368,50 +363,28 @@ nav li	{
 
 /* right column */
 
-#hands-01 {
+.content.r .hands{
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	width: 100%;
+	height: 100%;
+}
 
+.one{
 	background-image: url('../img/hands-01.svg');
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: 80%;
-	width: 100%;
-	height: 100%;
-	
 }
 
-#hands-02 {
-
+.two{
 	background-image: url('../img/hands-02.svg');
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: 80%;
-	width: 100%;
-	height: 100%;
-	
-	
 }
 
-#hands-03 {
-
+.three{
 	background-image: url('../img/hands-03.svg');
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: 80%;
-	width: 100%;
-	height: 100%;
-	
-	
 }
 
-#hands-04 {
-
+.four{
 	background-image: url('../img/hands-04.svg');
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: 80%;
-	width: 100%;
-	height: 100%;
-	
 }
 
 
