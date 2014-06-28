@@ -63,12 +63,7 @@ nav {
 	
 }
 
-.logo{
-	position:absolute;
-	right:0px;
-	width:60px;
-	top:0px;
-}
+
 
 
 hr {
@@ -87,7 +82,7 @@ p {
 	font-family: helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.6em;
-	margin: 3% 10%;
+	margin: 3% 20% 0 10%;
 	
 }
 
@@ -284,21 +279,29 @@ nav li	{
 
 /* left column */
 
+.logo{
+	position:absolute;
+	right:0px;
+	width:60px;
+	top:0px;
+}
+
 #intro {
 
 	position: relative;
-	
-	margin-top: 50%;
+	margin-top: 75%;
+	margin-right: 20%;
 	text-align: right;
+	
 	
 }
 
 #intro p {
 
 	margin: 0;
-	font-size: 4em;
-	font-style: italic;
-	line-height: 1.7em;
+	font-size: 2.5em;
+	font-weight: normal;
+	line-height: 1.3em;
 
 }
 
@@ -327,7 +330,7 @@ nav li	{
 
 #committee p{
 
-	text-align: center;
+	text-align: left;
 	margin: 2% 10%;
 	
 }
@@ -371,7 +374,7 @@ nav li	{
 #hands-01 {
 
 	background-image: url('../img/hands-01.svg');
-	background-position: top;
+	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: 80%;
 	width: 100%;
