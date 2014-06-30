@@ -86,11 +86,7 @@ p {
 	
 }
 
-dl {
 
-position : relative;
-
-}
 
 dd p {
 
@@ -101,7 +97,7 @@ dd p {
 	
 }
 
-dt a:link, a:visited, a:active {
+.platform a:link, a:visited, a:active {
 
 	font-family: helvetica, sans-serif;
 	font-size: 1em;
@@ -432,6 +428,14 @@ nav li	{
 
 	position: relative;
 	height: 250px;
+
+}
+
+iframe {
+
+	width: 70%;
+	height: 50%;
+
 
 }
 

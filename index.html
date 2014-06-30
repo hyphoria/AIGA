@@ -129,16 +129,16 @@
         	
         	</div>
        	 	
-        	<dl class="accordion">
+        	<section class="accordion">
 
-				<dt>
+				<div class="platform">
 					<h2>Platform 1</h2> 
         			<hr>
         			<h3>Inside/Outside: Design Education as Interface</h3>
         			<a href="">[Open / Close]</a>
-        		</dt>
+        		</div>
         		
-        		<dd>
+        		<div class="platform-content">
 				<p>
         		Contemporary design education makes complex demands on educators to be 
         		both futurists and subject-matter experts. From both inside and outside 
@@ -171,18 +171,18 @@
         		proposals as we continue to shape a conversation about ‘inside/outside’ design 
         		education as interface.
         		</p>
-				</dd>
+				</div>
 				
-				<dt>
+				<div class="platform">
         	
         		<h2>Platform 2</h2>
         		<hr>
         		
         		<h3>Inside/Outside: Design Education as Diverse Cultural<br /> and Social Space</h3>
         		<a href="">[Open / Close]</a>
-        		</dt>
+        		</div>
         		
-				<dd>
+				<div class="platform-content">
         		<p>
         		 As many introductory textbooks on anthropology, sociology, media studies, 
         		 communications studies, cultural studies or visual culture will tell us, 
@@ -213,17 +213,17 @@
         		proposals as we continue to shape our programming conversation about ‘inside/outside’ 
         		design education as diverse cultural and social space.
         		</p>
-        		</dd>
+        		</div>
 
-				<dt>
+				<div class="platform">
         	 	<h2>Platform 3</h2>
         	 	<hr>
         	 	
         	 	<h3>Inside/Outside: Design Education as Political Space</h3>
         	 	<a href="">[Open / Close]</a>
-				</dt>
+				</div>
 				
-				<dd>	
+				<div class="platform-content">	
 				<p>
 				No doubt design education is a political and contested space. Design 
 				programs everywhere are involved in discussions about their relevance 
@@ -256,9 +256,9 @@
         	 	proposals as we continue to shape our programming conversation about the 
         	 	politics of being ‘inside/outside’ design education.
         	 	</p>
-        	 	</dd>
+        	 	</div>
 
-			</dl>
+			</section>
         	
         	
         	
@@ -269,7 +269,7 @@
         		
         		<div id="map">
         		
-        			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23045.169047854637!2d-79.494925!3d43.780204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92a0cd9abbbd0ef8!2sDepartment+of+Design%2C+York+University!5e0!3m2!1sen!2sca!4v1403642859603" width="70%" height="50%" frameborder="0" style="border:0"></iframe>
+        			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23045.169047854637!2d-79.494925!3d43.780204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92a0cd9abbbd0ef8!2sDepartment+of+Design%2C+York+University!5e0!3m2!1sen!2sca!4v1403642859603"></iframe>
         		
         		</div>
         		
@@ -379,13 +379,13 @@
 <!--Accordian-->
 <script>
 $(document).ready(function($) {
-       $('.accordion dd').hide();
-       $('.accordion dt a').click(function(){
+       $('.accordion .platform-content').hide();
+       $('.accordion .platform a').click(function(){
           if ($(this).hasClass('selected')) {
                $(this).removeClass('selected');
                $(this).parent().next().slideUp();
           } else {
-               $('.accordion dt a').removeClass('selected');
+               $('.accordion .platform a').removeClass('selected');
                $(this).addClass('selected');
                $(this).parent().next().slideDown();
           }
