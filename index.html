@@ -69,18 +69,19 @@
           		
 			<div class="content">
 				<div id="intro">
-					<p> <strong>Inside / Outside</strong> </p>
-					<p> Graphic Design<br /> Education </p>
+					<h1>Inside / <br /> Outside</h1>
+					<h2>Graphic Design Education</h2>
+					<hr>
 				</div>
+					
 			</div>
     	
        	 	<div class="content" >
        	 		
        	 		<div id="date">
-       	 			<p><strong>April 16 -18, 2015</strong></p>
+       	 			<h1>April 16 -18, 2015</h1>
        	 			<p>York University</p>
-       	 			<p>Toronto, ON</p>
-       	 			<p><em>Canada</em>
+       	 			<p>Toronto, ON, Canada</p>
        	 		</div>
        	 		
        	 	</div>
@@ -90,23 +91,27 @@
        	 		<div id="committee">
        	 			<p><strong> Conference Organizing Committee:</strong></p> <p>David Gelb, Robert Gill and Angela Norwood </p>
 
-					<p><em>	Department of Design </em> / School of the Arts, Media, <br /> Performance and Design / York University</p>
+					<h3>Department of Design / School of the Arts, Media, <br /> Performance and Design / York University</h3>
 
        	 		</div>
        	 		
        	 	</div>
        	 	
-        	<div class="content">
+       	 	<div class="content">
         	
         		<div id="about" style="margin-top: 15%">
         		<h2>About</h2>
         		<hr>
     			<p>This conference seeks to activate three conversational platforms 
-    			embedded in the conference title: <br /><br />
+    			embedded in the conference title: </p>
     			
+    			<p style="margin-left: 15%;">
     			<strong>1)</strong> Design Education as <em>Interface</em> ; <br />
-    			<strong>2)</strong> Design Education as <em>Diverse Cultural and Social Space</em> and <br />
-    			<strong>3)</strong> Design Education as <em>Politics.</em> <br /><br />
+    			<strong>2)</strong> Design Education as <em>Diverse Cultural<br /> and Social Space</em> and <br />
+    			<strong>3)</strong> Design Education as <em>Politics.</em> <br />
+    			</p>
+    			
+    			<p>
     			The conference will explore the idea 
     			that graphic design education is rapidly evolving: the social spaces we 
     			work in, and the practices of teaching and learning we engage with, are 
@@ -123,15 +128,18 @@
         		</div>
         	
         	</div>
-        	
-        	 <div class="content" id="platforms">
-        	
-        		<h2>Platform 1</h2>
-        		<hr>
+       	 	
+        	<dl class="accordion">
+
+				<dt>
+					<h2>Platform 1</h2> 
+        			<hr>
+        			<h3>Inside/Outside: Design Education as Interface</h3>
+        			<a href="">[Open / Close]</a>
+        		</dt>
         		
-        		<h3>Inside/Outside: Design Education as Interface </h3>
-        		
-        		<p>
+        		<dd>
+				<p>
         		Contemporary design education makes complex demands on educators to be 
         		both futurists and subject-matter experts. From both inside and outside 
         		of professional and disciplinary spaces, educators are tasked with identifying 
@@ -163,16 +171,18 @@
         		proposals as we continue to shape a conversation about ‘inside/outside’ design 
         		education as interface.
         		</p>
-        		
-        	</div>
-        	
-        	 <div class="content">
+				</dd>
+				
+				<dt>
         	
         		<h2>Platform 2</h2>
         		<hr>
         		
         		<h3>Inside/Outside: Design Education as Diverse Cultural<br /> and Social Space</h3>
+        		<a href="">[Open / Close]</a>
+        		</dt>
         		
+				<dd>
         		<p>
         		 As many introductory textbooks on anthropology, sociology, media studies, 
         		 communications studies, cultural studies or visual culture will tell us, 
@@ -203,16 +213,17 @@
         		proposals as we continue to shape our programming conversation about ‘inside/outside’ 
         		design education as diverse cultural and social space.
         		</p>
-        		
-        	</div>
-        	
-        	 <div class="content">
-        	 	
+        		</dd>
+
+				<dt>
         	 	<h2>Platform 3</h2>
         	 	<hr>
         	 	
         	 	<h3>Inside/Outside: Design Education as Political Space</h3>
-					
+        	 	<a href="">[Open / Close]</a>
+				</dt>
+				
+				<dd>	
 				<p>
 				No doubt design education is a political and contested space. Design 
 				programs everywhere are involved in discussions about their relevance 
@@ -245,8 +256,11 @@
         	 	proposals as we continue to shape our programming conversation about the 
         	 	politics of being ‘inside/outside’ design education.
         	 	</p>
-        	 
-        	 </div>
+        	 	</dd>
+
+			</dl>
+        	
+        	
         	
         	<div class="content" id="directions">
         	
@@ -361,6 +375,24 @@
     		
 		</script> 
 		
+		
+<!--Accordian-->
+<script>
+$(document).ready(function($) {
+       $('.accordion dd').hide();
+       $('.accordion dt a').click(function(){
+          if ($(this).hasClass('selected')) {
+               $(this).removeClass('selected');
+               $(this).parent().next().slideUp();
+          } else {
+               $('.accordion dt a').removeClass('selected');
+               $(this).addClass('selected');
+               $(this).parent().next().slideDown();
+          }
+          return false;
+       });
+});
+</script>
 		
 		
 <!-- Gradient thing --> 
